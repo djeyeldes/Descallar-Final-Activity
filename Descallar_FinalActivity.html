@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+</head>
+<body>
+	<p id="demo1" style="color: blue;"></p>
+	<p id="demo2" style="color: red;"></p>
+	<p id="demo3"></p>
+	<script type="text/javascript">
+			var sFirst = prompt("Input your First Name: ");
+			var sLast = prompt("Input your Last Name: ");
+			var ID = prompt("Input your I.D. number: ");
+			var grade = prompt("Input grade: ");
+			var passed = "PASSED";
+			var failed = "FAILED";
+			if (grade>5 || grade<1)
+                                {
+				document.getElementById("demo3").innerHTML = "Invalid Grade.";
+			        }
+                        else if (grade>5 || grade<1)
+                                {
+				document.getElementById("demo3").innerHTML = "Invalid Grade.";
+			        }
+			else if (grade<=3)
+                        {
+				if (grade % 2 == 0)
+                                {
+				document.getElementById("demo1").innerHTML = "ID#: "+ID+" Name: "+sFirst+" "+sLast+", Grade: "+grade+" - "+passed;
+				}
+				else
+                                {
+				document.getElementById("demo2").innerHTML = "ID#: "+ID+" Name: "+sFirst+" "+sLast+" Grade: "+grade+" - "+passed;
+				}
+			}
+                        else
+		                {
+				document.getElementById("demo2").innerHTML = "ID#: "+ID+" Name: "+sFirst+" "+sLast+" Grade: "+grade+" - "+failed;
+				}
+	</script>
+</body>
+</html>
